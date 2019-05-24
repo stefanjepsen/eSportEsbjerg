@@ -6,10 +6,17 @@
       tile
       style="box-shadow: 0px 1px 6px #000000; opacity: 0.95; font-family: tenby-seven, sans-serif; font-weight: 700;"
     >
+    
       <v-card-title style="background-color: #121723;" class>
         <v-flex xs2 offset-xs class="hidden-sm-and-down"></v-flex>
-        <img src="./../assets/logo2.png" class="logo2">
-        <v-title>ESPORT ESBJERG</v-title>
+        
+        <div>
+          <p 
+          style="font-size: 250%"
+          >Kontakt Information </p> <br>
+          kage
+          <br>
+        </div>
         <v-spacer></v-spacer>
         <v-toolbar-items class="hidden-sm-and-down">
           <v-btn flat>Hjem</v-btn>
@@ -43,5 +50,6 @@ export default {};
 </script>
 
 <style lang="scss">
+
 </style>
 
