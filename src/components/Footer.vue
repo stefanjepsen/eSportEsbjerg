@@ -6,15 +6,12 @@
       tile
       style="box-shadow: 0px 1px 6px #000000; opacity: 0.95; font-family: tenby-seven, sans-serif; font-weight: 700;"
     >
-    
       <v-card-title style="background-color: #121723;" class>
-        <v-flex xs2 offset-xs class="hidden-sm-and-down"></v-flex>
-        
+        <v-flex xs1 offset-xs class="hidden-sm-and-down"></v-flex>
+
         <div>
-          <p 
-          style="font-size: 250%"
-          >Kontakt Information </p> <br>
-          kage
+          <p style="font-size: 250%">Kontakt Information</p>
+          <br>kage
           <br>
         </div>
         <v-spacer></v-spacer>
@@ -25,7 +22,7 @@
           <v-btn flat>Events</v-btn>
           <v-btn flat style="color:#21AED4;">Discord</v-btn>
         </v-toolbar-items>
-        <v-flex xs2 offset-xs></v-flex>
+        <v-flex xs1 offset-xs></v-flex>
       </v-card-title>
 
       <v-card-actions
@@ -50,6 +47,5 @@ export default {};
 </script>
 
 <style lang="scss">
-
 </style>
 
