@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div >
     
-    <v-container grid-list-md text-xs-center>
-      <v-layout row wrap>
+    <v-container grid-list-md text-xs-center style="max-width: 1500px;">
+      <v-layout row wrap >
         <v-flex xs6>
           <v-card flat class="transparent">
             <v-card-text class="px-0">
@@ -25,7 +25,7 @@
           </v-card>
           <v-card
             flat
-            style="background-color: #15537d; border: solid 2.5px #2b93c6; padding: 5px; margin-top: 20px;"
+            style="background-color: #15537d; border: solid 2.5px #2b93c6; padding: 5px; margin-top: 20px; "
           >
             <v-card-text style="text-align: left; padding: 0px; font-family: Tenby seven regular; font-size: 15px; letter-spacing: 1px; " class="px-0"> 
               Hvad handler det hele om?
