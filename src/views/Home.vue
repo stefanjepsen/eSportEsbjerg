@@ -1,14 +1,242 @@
 <template>
-  <div class="home">
-    <v-container>
-      <v-layout align-center justify-center row fill-height>
-        <v-flex xs12 md12 lg10 xl10>
+  <div>
+    <v-container fluid grid-list-md text-xs-center style="max-width: 1500px;">
+      <v-layout row wrap>
+        <v-flex xs12 lg10 offset-lg1 d-flex>
           <div class="Border1"></div>
-          <div class="Border1"></div>
-
           <br>
+        </v-flex>
 
-          <div class="grid-container">
+        <v-flex xs12 sm6 md3 offset-lg1 d-flex>
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color max-width="600">
+              <v-img
+                style="height:100%"
+                src="https://scontent.fbll1-1.fna.fbcdn.net/v/t1.0-9/60069865_1688794517889668_6134994305661534208_n.jpg?_nc_cat=110&_nc_ht=scontent.fbll1-1.fna&oh=d669eb60bd8f44bb996cb566d004309d&oe=5D50D661"
+                aspect-ratio
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </v-flex>
+
+        <v-flex xs12 sm6 md4>
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
+              <v-img
+                src="http://computerfysik.dk/wp-content/uploads/2016/11/Counterstrike-Global-Offensive.jpg"
+                aspect-ratio
+                contain
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+
+          <v-divider class="mx-1" inset vertical style="visibility: hidden;"></v-divider>
+
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
+              <v-img
+                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+                aspect-ratio
+                contain
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </v-flex>
+
+        <v-flex xs12 sm6 md3 d-flex>
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color max-width="600">
+              <v-img
+                style="background-color:#121723; height:100% "
+                src="http://www.esport-esbjerg.dk/media/1051/logo2000x2000.png"
+                aspect-ratio
+                contain
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </v-flex>
+
+        <p></p>
+        <br>
+
+        <v-flex xs12 lg10 offset-lg1 d-flex>
+          <div class="Border1"></div>
+          <br>
+        </v-flex>
+
+        <v-flex xs12 lg3 offset-lg1 d-flex>
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
+              <v-img
+                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+                aspect-ratio
+                contain
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </v-flex>
+        <v-flex xs12 lg4 grow d-flex>
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
+              <v-img
+                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+                aspect-ratio
+                contain
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </v-flex>
+        <v-flex xs12 lg3 d-flex>
+          <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
+              <v-img
+                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+                aspect-ratio
+                contain
+              >
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    background-color:#15537d;
+                    color:white; "
+                  >Esbjerg Lan party</div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+        </v-flex>
+
+        <v-flex xs10 md7 offset-lg1 d-flex>
+          <div class="Border1"></div>
+        </v-flex>
+        <v-flex xs2 md3 offset-lg0 offset-lg>
+          <div class="Border1"></div>
+        </v-flex>
+
+        <!--Instagram-->
+        <v-flex xs12 lg7 offset-lg1 d-flex>
+          <iframe
+            src="http://instaembedder.com/gallery-v2.php?width=140&cols=5&rows=3&margin=8&color=gray&likes=1&share_buttons=1&comments=1&link=1&frame=1&image_border=4&frame_color=transparent&cid=11584&"
+            frameborder="0"
+            width="100%"
+            height="528"
+          ></iframe>
+        </v-flex>
+
+        <!--FACEBOOK-->
+        <v-flex xs12 lg2 offset-lg d-flex>
+          <div
+            class="fb-page"
+            data-href="https://www.facebook.com/eSportEsbjerg/"
+            data-tabs="timeline"
+            data-width="358 "
+            data-height="500"
+            data-small-header="false"
+            data-adapt-container-width="false"
+            data-hide-cover="false"
+            data-show-facepile="true"
+          >
+            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+          </div>
+        </v-flex>
+
+        <v-flex xs10 md3 offset-lg1 d-flex>
+          <div class="Border1"></div>
+        </v-flex>
+        <v-flex xs2 md7 offset-lg0 offset-lg>
+          <div class="Border1"></div>
+        </v-flex>
+
+<v-flex xs10 md3 offset-lg1 d-flex>
+         DISCORD APP HER
+        </v-flex>
+
+
+         <v-flex xs2 md7 offset-lg0 offset-lg>
+          Join us 
+        </v-flex>
+
+
+
+
+
+      </v-layout>
+    </v-container>
+  </div>
+
+  <!-- 
+   <v-container grid-list-md text-xs-center style="max-width: 1500px;">
+      <v-layout row wrap >
+        <v-flex xs10>
+       
+
+     
+
+         
             <div class="events">
               <v-hover value>
                 <v-card hover slot-scope="{ hover }" contain color="grey lighten-5" max-width="600">
@@ -20,15 +248,16 @@
                       <div
                         v-if="hover"
                         class="d-flex v-card--reveal display-2"
-                        style="height: 100%; background-color:#15537d;  "
+                        style="height: 100%; background-color:#15537d;"
                       ></div>
                     </v-expand-transition>
                   </v-img>
                 </v-card>
               </v-hover>
             </div>
+        </v-flex>
 
-            <div class="cs1">
+           
               <v-hover value>
                 <v-card
                   hover
@@ -52,7 +281,7 @@
                   </v-img>
                 </v-card>
               </v-hover>
-            </div>
+     
 
             <div class="ft1">
               <v-hover value>
@@ -103,7 +332,7 @@
           <br>
           <div class="Border1"></div>
           <br>
-          <div class="grid-games">
+        
             <div class="Game1">
               <v-hover value>
                 <v-card
@@ -208,13 +437,15 @@
                 </v-card>
               </v-hover>
             </div>
-          </div>
+      
 
           <br>
           <div class="Border1"></div>
           <br>
 
-          <div class="grid-insta">
+     
+
+
             <div class="Insta-Galleri">
               <blockquote
                 class="instagram-media"
@@ -269,7 +500,7 @@
                         style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"
                       >Vis dette opslag på Instagram</div>
                     </div>
-                    <div style="padding: 12.5% 0;"></div>
+                    
                     <div
                       style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"
                     >
@@ -331,6 +562,7 @@
                 </div>
               </blockquote>
               
+              
               <p>
                 anders
                 ASD
@@ -346,26 +578,27 @@
             <div class="Discord-server">
               <p>anders</p>
             </div>
-          </div>
+       
           <br>
           <div class="Border1"></div>
           <br>
-          <div class="grid-facebook">
+       
             <div class="facebookpost">
               <p>anders</p>
             </div>
             <div class="medlemidag">
               <p>Anders</p>
             </div>
-          </div>
+      
 
           <br>
           <div class="Border1"></div>
           <br>
-        </v-flex>
+     
       </v-layout>
+      
     </v-container>
-  </div>
+  -->
 </template>
 
 <script>
@@ -381,95 +614,6 @@ export default {};
   border: solid 2.5px #2b93c6;
 
   background-color: #15537d;
-}
-
-.grid-container {
-  display: grid;
-  grid-gap: 16px;
-  grid-template-columns: 1fr 536px 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "events cs1 placeholder1" "events ft1 placeholder1";
-}
-
-.events {
-  grid-area: events;
-}
-
-.cs1 {
-  grid-area: cs1;
-}
-
-.ft1 {
-  grid-area: ft1;
-}
-
-.placeholder1 {
-  grid-area: placeholder1;
-}
-
-.grid-games {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "Game1 Game-2 Game-3 Game-4";
-  grid-gap: 16px;
-}
-
-.Game1 {
-  grid-area: Game1;
-  border: solid 2.5px #2b93c6;
-}
-
-.Game-2 {
-  grid-area: Game-2;
-  border: solid 2.5px #2b93c6;
-}
-
-.Game-3 {
-  grid-area: Game-3;
-  border: solid 2.5px #2b93c6;
-}
-
-.Game-4 {
-  grid-area: Game-4;
-  border: solid 2.5px #2b93c6;
-}
-
-.grid-insta {
-  display: grid;
-  grid-template-columns: 70% 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "Insta-Galleri Discord-server";
-
-  grid-gap: 16px;
-}
-
-.Insta-Galleri {
-  grid-area: Insta-Galleri;
-  border: solid 2.5px #2b93c6;
-}
-
-.Discord-server {
-  grid-area: Discord-server;
-  border: solid 2.5px #2b93c6;
-}
-
-.grid-facebook {
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "facebookpost medlemidag";
-  grid-gap: 16px;
-}
-
-.facebookpost {
-  grid-area: facebookpost;
-  border: solid 2.5px #2b93c6;
-}
-
-.medlemidag {
-  grid-area: medlemidag;
-  border: solid 2.5px #2b93c6;
 }
 
 .v-card--reveal {
