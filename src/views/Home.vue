@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <v-container fluid grid-list-md text-xs-center style="max-width: 1500px;">
       <v-layout row wrap>
         <v-flex xs12 lg10 offset-lg1 d-flex>
@@ -20,7 +21,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+                    
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -42,7 +43,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+                   
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -64,7 +65,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+               
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -87,7 +88,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+                    
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -105,19 +106,20 @@
         </v-flex>
 
         <v-flex xs12 lg3 offset-lg1 d-flex>
-          <v-hover>
+           <v-hover>
             <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
               <v-img
-                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+              style="height:100%; position:relative;" 
+                src="https://mlstaticquic-a.akamaihd.net/counter-strike-global-offensive-cs-go-original-steam-xgamesz-D_NQ_NP_784486-MLU26572713582_122017-F.jpg"
                 aspect-ratio
-                contain
+                
               >
                 <v-expand-transition>
                   <div
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+                   
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -125,11 +127,11 @@
             </v-card>
           </v-hover>
         </v-flex>
-        <v-flex xs12 lg4 grow d-flex>
+        <v-flex xs12 lg4 auto d-flex>
           <v-hover>
             <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
               <v-img
-                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+                src="https://icdn2.digitaltrends.com/image/ninja-skin-featured-image-fortnite-season-8-patch-8-0-7126.jpg"
                 aspect-ratio
                 contain
               >
@@ -138,7 +140,7 @@
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+                   
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -150,16 +152,18 @@
           <v-hover>
             <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
               <v-img
-                src="https://cdn.wccftech.com/wp-content/uploads/2018/12/fortnite_characters.jpg"
+              
+              style="height:100%;"
+                src="https://image.redbull.com/rbcom/010/2014-11-13/1331690088299_2/0100/0/1/overwatch.jpg"
                 aspect-ratio
-                contain
+                
               >
                 <v-expand-transition>
                   <div
                     v-if="hover"
                     class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
                     style="height: 100%; 
-                    background-color:#15537d;
+                  
                     color:white; "
                   >Esbjerg Lan party</div>
                 </v-expand-transition>
@@ -178,6 +182,7 @@
         <!--Instagram-->
         <v-flex xs12 lg7 offset-lg1 d-flex>
           <iframe
+          loading="lazy"
             src="http://instaembedder.com/gallery-v2.php?width=140&cols=5&rows=3&margin=8&color=gray&likes=1&share_buttons=1&comments=1&link=1&frame=1&image_border=4&frame_color=transparent&cid=11584&"
             frameborder="0"
             width="100%"
@@ -217,7 +222,34 @@
 
 
          <v-flex xs2 md7 offset-lg0 offset-lg>
-          Join us 
+    <v-hover>
+            <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
+              
+              <v-img
+              style="height:100%; "
+                src="https://gamerpackaging.com/wp-content/uploads/2016/09/Why-us-Staircase-Group-Shot-Web.jpg"
+                aspect-ratio
+                
+              >
+              <h1 style="font-family: tenby-seven, sans-serif; font-weight: 700!important; font-size: 450%; color:white; opacity:1;" auto>Tilmeld dig idag!</h1>
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
+                    style="height: 100%; 
+                    
+                    color:white; "
+                  >
+                    <div>
+                      <p>kage</p>
+                    </div>
+                  </div>
+                </v-expand-transition>
+              </v-img>
+            </v-card>
+          </v-hover>
+
+          
         </v-flex>
 
 
@@ -616,13 +648,21 @@ export default {};
   background-color: #15537d;
 }
 
+.ff1 {
+  opacity: 1 !important; 
+}
+
 .v-card--reveal {
   align-items: center;
   bottom: 0;
   justify-content: center;
-  opacity: 0.3;
+ opacity: 0.9;
   position: absolute;
   width: 100%;
+  background-color:#121723;
 }
+
+
+
 </style>
 
