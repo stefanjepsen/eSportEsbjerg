@@ -1,5 +1,7 @@
 <template>
-  <v-app dark style="background-image: linear-gradient(218deg, #15537d, 7%, #121723); letter-spacing: 2.2px; ">
+  <v-app dark style="background-image: linear-gradient(218deg, #15537d, 7%, #121723); letter-spacing: 2.2px; font-family: hero-new,sans-serif;
+font-weight: 300;
+font-style: normal;">
 
     <v-content>
       

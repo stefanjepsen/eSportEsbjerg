@@ -1,51 +1,137 @@
 <template>
-  <v-footer dark height="auto">
+ <v-footer
+    dark
+    height="auto"
+  >
+ 
     <v-card
-      class="flex"
       flat
+      
       tile
-      style="box-shadow: 0px 1px 6px #000000; opacity: 0.95; font-family: tenby-seven, sans-serif; font-weight: 700;"
+      class=" white--text text-xs-center flex"
+      style="font-family: tenby-seven, sans-serif; font-weight: 700;
+      background-color:#121723;
+      "
     >
-      <v-card-title style="background-color: #121723;" class>
-        <v-flex xs1 offset-xs class="hidden-sm-and-down"></v-flex>
+     <div class="parent">
+  <img class="image1" src="http://www.esport-esbjerg.dk/media/1051/logo2000x2000.png" />
+  
+</div>
+    
+      <v-card-text>
+        <v-btn style="" light v-for="icon in icons" :key="icon" class="mx-4" icon>
+          <a :href="icon.url" :target="icon.target">
+            <v-icon size="24px">{{ icon.name }}</v-icon>
+          </a>
+        </v-btn>
+      </v-card-text>
 
-        <div>
-          <p style="font-size: 250%">Kontakt Information</p>
-          <br>kage
-          <br>
-        </div>
-        <v-spacer></v-spacer>
-        <v-toolbar-items class="hidden-sm-and-down">
-          <v-btn flat>Hjem</v-btn>
-          <v-btn flat>Tilmelding</v-btn>
-          <v-btn flat>Omkring os</v-btn>
-          <v-btn flat>Events</v-btn>
-          <v-btn flat style="color:#21AED4;">Discord</v-btn>
-        </v-toolbar-items>
-        <v-flex xs1 offset-xs></v-flex>
-      </v-card-title>
+      <v-card-text class="white--text ">
+       <p style="font-size:250%;">KONTAKT  OS</p> 
+           
+            <div class="Border2"></div>
 
-      <v-card-actions
-        class="justify-center"
-        style="font-family: hero-new, sans-serif;
-font-weight: 300;
-font-style: normal; font-size:10px; padding:0;"
-      >
-        &copy;2019 —
-        <strong
-          style="font-family: hero-new, sans-serif;
-font-weight: 300;
-font-style: normal; font-size:10px;"
-        >eSport Esbjerg</strong>
-      </v-card-actions>
+            <br>
+            <p>
+              <span class="fontSize">ADRESSE</span>
+           <br>
+ASKEKRATTET 4  <br>
+            ESBJERG
+             
+            </p>
+            <p>
+              <span class="fontSize">Telefon</span>
+              <br>
+              +45 27 15 37 74
+            </p>
+     
+            <p>
+              <span class="fontSize">E-MAIL</span>
+              <br>
+              SUPPORT@ESPORT-ESBJERG.DK
+            </p>
+      </v-card-text>
+
+      <v-divider style="border-color:#2B93C6"></v-divider>
+
+      <v-card-text class="white--text">
+        &copy;2019 — <strong>Lektiebanden</strong>
+      </v-card-text>
     </v-card>
   </v-footer>
+
+
+
 </template>
 
 <script>
-export default {};
+export default {
+  data: () => ({
+    icons: [
+      {
+        name: "fab fa-facebook",
+        url: "https://www.facebook.com/eSportEsbjerg/?eid=ARDMt8mTpiP4VD173eVsXAkaNFBRDKWWhheL5ZRpRgZVufRKaAMr3RqtZGq3F55NoYABBW8_6fhv2gp1",
+        target: "_blank"
+      },
+
+      {
+        name: "fab fa-youtube-square",
+        url: "https://www.youtube.com/channel/UCm75AVCNbTaKKmIWu77eHmA/featured",
+        target: "_blank"
+      },
+      {
+        name: "fab fa-instagram",
+        url: "https://www.instagram.com/esport_esbjerg/",
+        target: "_blank"
+      }
+    ]
+  })
+};
 </script>
 
 <style lang="scss">
+.fontSize {
+  font-size: 170%;
+}
+
+
+.Border2 {
+  width: 20%;
+margin: auto;
+  height: 1px;
+
+  border: solid 0.5px #2b93c6;
+
+  background-color: #15537d;
+}
+
+
+.fa-facebook::before {
+  color: white;
+}
+.fa-youtube-square::before {
+  color: white;
+}
+.fa-instagram::before {
+  color: white;
+  size: 200px;
+}
+
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin:0;
+  height: 2em;
+}
+.image1 {
+  position: relative;
+  top: -75px;;
+  left: 0;
+  height: 120px;;
+}
+
 </style>
 
