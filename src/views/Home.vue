@@ -100,7 +100,7 @@
                     
                     color:white; "
                     >
-                      <p class="hovertext">ESPORT ESBJERG</p>
+                      <p class="hovertext">eSPORT ESBJERG</p>
                     </div>
                   </v-expand-transition>
                 </router-link>
@@ -186,7 +186,7 @@
                     
                     color:white; "
                     >
-                      <p class="hovertext">ESPORT ESBJERG</p>
+                      <p class="hovertext">eSPORT ESBJERG</p>
                     </div>
                   </v-expand-transition>
                 </router-link>
@@ -306,9 +306,9 @@
         </v-flex>
 
         <!--Instagram-->
-        <v-flex xs12 lg7 offset-lg1 d-flex >
+        <v-flex xs12 lg7 offset-lg1 d-flex>
           <iframe
-          style="padding-left:25px;"
+            style="padding-left:25px;"
             src="http://instaembedder.com/gallery-v2.php?width=140&cols=5&rows=3&margin=8&color=gray&likes=1&share_buttons=1&comments=1&link=1&frame=1&image_border=4&frame_color=transparent&cid=11638&"
             frameborder="0"
             width="100%"
@@ -316,8 +316,6 @@
             lazy-src
             loading="lazy"
           ></iframe>
-
-    
         </v-flex>
 
         <!--FACEBOOK-->
