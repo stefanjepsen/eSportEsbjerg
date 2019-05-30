@@ -15,13 +15,7 @@
         </v-flex>
 
  <v-flex xs12 lg10 offset-lg1 d-flex id="discord">
-          <widgetbot
-            server="582527715840753665"
-            channel="582527715840753669"
-            width="800"
-            height="600"
-            shard="https://cl3.widgetbot.io"
-          ></widgetbot>
+      <iframe src="https://titanembeds.com/embed/582527715840753665" height="600" width="800" frameborder="0"></iframe>
         </v-flex>
 
 
@@ -43,8 +37,8 @@
             <br>
             <br>
             <span style="font-weight:1000 !important; font-size: 15px; ">Sådan gør du</span> <br> <br>
-            Tryk på knappen "JOIN" i højre hjørne af vinduet. <br>
-            Skriv dit navn, så vi kan danne overblik over hvem vi svarer. <br>
+            Tryk på knappen "eSports Esbjerg" i vinduet for at blive inviteret direkte til discord. 
+            Eller tryk i vinduet og begynd at skrive. <br> Tryk på burger menuen for at få vidst de ledige kanaler <br>
             Vælg herefter den kanal under "channels" ude til venstre som passer på dit spørgsmål. <br>
             Skriv herefter i "message-feltet" dit spørgsmål, så vender vi tilbage til dig hurtigst muligt. </p> 
     </v-flex>

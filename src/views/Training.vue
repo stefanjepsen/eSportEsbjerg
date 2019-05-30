@@ -1,60 +1,48 @@
 <template>
   <div>
     <v-container grid-list-md text-xs-center style="max-width: 1500px;">
-      <v-flex xs12 md10 offset-md1  >
-            <v-card flat class="transparent">
-              <v-card-text style="text-align: left; padding-top: 35px;" class="px-0">
-                <span
-                  style="font-family: tenby-seven, sans-serif; font-weight: 700!important; font-size: 35px; align: left;  "
-                >TRÆNING</span>
-                <v-spacer></v-spacer>
-                <v-card flat style="background-color: #2b93c6; height: 2px;"></v-card>
-              </v-card-text>
-            </v-card>
-          </v-flex>
+      <v-flex xs12 md10 offset-md1>
+        <v-card flat class="transparent">
+          <v-card-text style="text-align: left; padding-top: 35px;" class="px-0">
+            <span
+              style="font-family: tenby-seven, sans-serif; font-weight: 700!important; font-size: 35px; align: left;  "
+            >TRÆNING</span>
+            <v-spacer></v-spacer>
+            <v-card flat style="background-color: #2b93c6; height: 2px;"></v-card>
+          </v-card-text>
+        </v-card>
+      </v-flex>
       <v-flex xs12 md10 offset-lg1 class="hidden-lg-and-up">
-          <v-carousel hide-delimiters style="height: 250px !important;" >
-            <v-carousel-item 
-              class="fade-in-fwd"
-              reverse-transition="fade-in-fwd"
-              v-for="(item,i) in items"
-              :key="i"
-              :src="item.src"
-              position="top;"
-              contain
-            ></v-carousel-item>
-          </v-carousel>
-        </v-flex>
+        <v-carousel hide-delimiters style="height: 250px !important;">
+          <v-carousel-item
+            class="fade-in-fwd"
+            reverse-transition="fade-in-fwd"
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            position="top;"
+            contain
+          ></v-carousel-item>
+        </v-carousel>
+      </v-flex>
 
-        <v-flex xs12 md10 offset-lg1 class="hidden-md-and-down">
-          <v-carousel>
-            <v-carousel-item style=""
-              class="fade-in-fwd"
-              reverse-transition="fade-in-fwd"
-              v-for="(item,i) in items"
-              :key="i"
-              :src="item.src"
-              position="top;"
-              
-            ></v-carousel-item>
-          </v-carousel>
+      <v-flex xs12 md10 offset-lg1 class="hidden-md-and-down">
+        <v-carousel>
+          <v-carousel-item
+            style
+            class="fade-in-fwd"
+            reverse-transition="fade-in-fwd"
+            v-for="(item,i) in items"
+            :key="i"
+            :src="item.src"
+            position="top;"
+          ></v-carousel-item>
+        </v-carousel>
+      </v-flex>
 
-        </v-flex>
-  
+      <v-divider class="hidden-lg-and-up" inset style="visibility: hidden; !important;"></v-divider>
 
-    
-  <v-divider class="hidden-lg-and-up" inset style="visibility: hidden; !important;"></v-divider>
-   
       <v-layout row wrap>
-     
-
-     
-  
-
-
-     
-
-  
         <v-flex xs12 md5 offset-md1>
           <v-card flat class="transparent" style>
             <v-card-text style=" text-align: left; padding-top: 35px;" class="px-0">
@@ -124,17 +112,18 @@ font-style: normal;font-size: 15px; letter-spacing: 1px; "
             </v-card-text>
           </v-card>
         </v-flex>
- <v-flex xs12 md10 offset-lg1>
-
-        <v-divider class="pa-2" inset style="visibility: hidden;"></v-divider>
-  </v-flex>
+        <v-flex xs12 md10 offset-lg1>
+          <v-divider class="pa-2" inset style="visibility: hidden;"></v-divider>
+        </v-flex>
         <v-flex xs12 md10 offset-lg1>
           <v-card flat class="transparent">
-            <v-card-text style=" font-size: 35px; text-align: left; padding: 0px;" class="font">Ruteanvisninger</v-card-text>
+            <v-card-text
+              style=" font-size: 35px; text-align: left; padding: 0px;"
+              class="font"
+            >Ruteanvisninger</v-card-text>
             <v-card flat style="background-color: #2b93c6; height: 1.5px;"></v-card>
           </v-card>
         </v-flex>
-
 
         <v-flex xs12 md4 offset-md1>
           <div class="mapouter">
@@ -151,7 +140,6 @@ font-style: normal;font-size: 15px; letter-spacing: 1px; "
               ></iframe>
               <a href="https://www.pureblack.de"></a>
             </div>
-            
           </div>
         </v-flex>
 
@@ -183,19 +171,16 @@ export default {
     return {
       items: [
         {
-          src:
-            "https://i.ibb.co/SVWvXDL/Tr-ning-ved-Cosmos.jpg"
+          src: "https://i.ibb.co/SVWvXDL/Tr-ning-ved-Cosmos.jpg"
         },
         {
-          src:
-            "https://i.ibb.co/PG2YKk1/Tr-ning-ved-Cosmos-3.jpg"
+          src: "https://i.ibb.co/PG2YKk1/Tr-ning-ved-Cosmos-3.jpg"
         },
         {
           src: "https://i.ibb.co/5T3qb58/DSC00072.jpg"
         },
         {
-          src:
-            "https://i.ibb.co/NF3CkJX/Tr-ning-ved-Cosmos-2.jpg"
+          src: "https://i.ibb.co/NF3CkJX/Tr-ning-ved-Cosmos-2.jpg"
         }
       ]
     };

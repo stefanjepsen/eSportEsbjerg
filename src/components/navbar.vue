@@ -58,6 +58,7 @@
                   <v-btn class="knap" style="width:100%; padding:0; margin: 0;" to="/spil">SPIL</v-btn>
                   <v-btn
                     class="knap"
+                    @click="$vuetify.goTo('#element-near-top', { offset: -100 })"
                     style="width:100%; padding:0; margin: 0; color:#21AED4;"
                     to="/Discord"
                   >DISCORD</v-btn>
@@ -84,7 +85,7 @@
             <v-toolbar-items class="hidden-sm-and-down">
               <v-btn to="/spil" flat>spil</v-btn>
               <v-divider class="pa-1" inset vertical style="visibility: hidden;"></v-divider>
-              <v-btn flat style="color:#21AED4;" to="/Discord">Discord</v-btn>
+              <v-btn flat style="color:#21AED4;"  to="/Discord"  >Discord</v-btn>
             </v-toolbar-items>
           </v-toolbar-items>
         </v-flex>
@@ -94,7 +95,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+ 
+};
 </script>
 
 <style lang="scss">

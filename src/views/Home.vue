@@ -28,40 +28,13 @@
           <v-divider class inset style="visibility: hidden;"></v-divider>
         </v-flex>
 
-        <v-flex xs6 md3 offset-lg1 d-flex class="hidden-md-and-down">
+        <v-flex xs5 md3 offset-lg1 d-flex class>
           <v-hover>
             <v-card slot-scope="{ hover }" class="mx-auto transparent" color max-width="600">
               <v-img
                 style="height:100%"
                 src="https://scontent.fbll1-1.fna.fbcdn.net/v/t1.0-9/60069865_1688794517889668_6134994305661534208_n.jpg?_nc_cat=110&_nc_ht=scontent.fbll1-1.fna&oh=d669eb60bd8f44bb996cb566d004309d&oe=5D50D661"
                 aspect-ratio
-              >
-                <router-link to="/Lan">
-                  <v-expand-transition>
-                    <div
-                      v-if="hover"
-                      class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
-                      style="height: 100%; 
-                    
-                    color:white;"
-                    >
-                      <p class="hovertext">ESBJERG LAN PARTY</p>
-                    </div>
-                  </v-expand-transition>
-                </router-link>
-              </v-img>
-            </v-card>
-          </v-hover>
-        </v-flex>
-
-        <v-flex xs6 md3 offset-lg1 d-flex class="hidden-lg-and-up">
-          <v-hover>
-            <v-card slot-scope="{ hover }" class="mx-auto transparent" color max-width="600">
-              <v-img
-                style="height:100%"
-                src="https://scontent.fbll1-1.fna.fbcdn.net/v/t1.0-9/60069865_1688794517889668_6134994305661534208_n.jpg?_nc_cat=110&_nc_ht=scontent.fbll1-1.fna&oh=d669eb60bd8f44bb996cb566d004309d&oe=5D50D661"
-                aspect-ratio
-                contain
               >
                 <router-link to="/Lan">
                   <v-expand-transition>
@@ -81,35 +54,7 @@
           </v-hover>
         </v-flex>
 
-        <v-flex xs6 md3 d-flex class="hidden-md-and-up">
-          <v-hover>
-            <v-card flat slot-scope="{ hover }" class="mx-auto transparent" color max-width="600">
-              <v-img
-                class="glitch"
-                style=" height:100% "
-                src="http://www.esport-esbjerg.dk/media/1051/logo2000x2000.png"
-                aspect-ratio
-                contain
-              >
-                <router-link to="/About">
-                  <v-expand-transition>
-                    <div
-                      v-if="hover"
-                      class="d-flex transition-fast-in-fast-out v-card--reveal display-2"
-                      style="height: 100%; 
-                    
-                    color:white; "
-                    >
-                      <p class="hovertext">eSPORT ESBJERG</p>
-                    </div>
-                  </v-expand-transition>
-                </router-link>
-              </v-img>
-            </v-card>
-          </v-hover>
-        </v-flex>
-
-        <v-flex xs12 md4>
+        <v-flex xs6 md4>
           <v-hover>
             <v-card slot-scope="{ hover }" class="mx-auto transparent" color>
               <v-img
@@ -196,7 +141,7 @@
         </v-flex>
 
         <v-flex xs12 sm6 md10 offset-lg1 d-flex>
-          <v-divider class="pa-3" inset style="visibility: hidden;"></v-divider>
+          <v-divider class="pa-2" inset style="visibility: hidden;"></v-divider>
         </v-flex>
 
         <!-- Spillene ------------------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -411,30 +356,32 @@ font-style: normal;"
 
         <v-flex xs12 lg10 offset-lg1 d-flex>
           <div class="Border1">
-            <p class="fontsize2">VÆR MED PÅ DISCORD</p>
+            <p class="fontsize2"> <span class="hidden-md-and-down"> VÆR MED PÅ </span>DISCORD</p>
           </div>
           <br>
         </v-flex>
-
-        <v-flex xs12 sm6 md10 offset-lg1 d-flex>
+   <v-divider class="pa-2" inset style="visibility: hidden;"></v-divider>
+        <v-flex xs12 sm6 md10 offset-lg1 class="discord" d-flex>
           <v-divider class inset style="visibility: hidden;"></v-divider>
         </v-flex>
         <v-flex xs12 lg10 offset-lg1 d-flex id="discord">
-          <widgetbot
-            server="582527715840753665"
-            channel="582527715840753669"
-            width="800"
-            height="600"
-            shard="https://cl3.widgetbot.io"
-          ></widgetbot>
+        <iframe src="https://titanembeds.com/embed/582527715840753665" height="600" width="800" frameborder="0"></iframe>
         </v-flex>
+ 
+
+
+
+
+
       </v-layout>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+
+};
 </script>
 
 <style lang="scss">
